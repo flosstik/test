@@ -1,0 +1,45 @@
+reference: questionnaire_example
+type: questionnaire
+content:
+  - reference: slide1
+    type: slide
+    label: Informations personnelles
+    content:
+      - reference: first_name
+        type: text_input
+        label: Quel est votre prénom ?
+      - reference: last_name
+        type: text_input
+        label: Quel est votre age ?
+  - reference: slide2
+    type: slide
+    label: Informations complémentaires
+    content:
+      - reference: family_situation
+        type: single_choice
+        label: Quel est votre situation familiale ?
+        content:
+          - label: Célibataire
+            value: single
+          - label: En couple
+            value: in_a_relation
+      - reference: maried
+        type: boolean
+        label: Êtes-vous marié ?
+  - reference: slide3
+    type: slide
+    label: Informations Financières
+    content:
+      - reference: revenue_type
+        type: multiple_choice
+        label: Quel sont vos types de revenus ?
+        content:
+          - label: Salarié
+            value: salarie
+          - label: Retraite
+            value: retraite
+          - label: Indépendants
+            value: independant
+      - reference: revenue_amount
+        type: number_input
+        label: Quel est le montant de vos revenus ?
